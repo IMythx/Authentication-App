@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/https://github.com/IMythx/Authentication-App/static/css/main.154d79e4.chunk.css",
-    "main.js": "/https://github.com/IMythx/Authentication-App/static/js/main.ff99ff4a.chunk.js",
-    "main.js.map": "/https://github.com/IMythx/Authentication-App/static/js/main.ff99ff4a.chunk.js.map",
-    "runtime-main.js": "/https://github.com/IMythx/Authentication-App/static/js/runtime-main.f048dd62.js",
-    "runtime-main.js.map": "/https://github.com/IMythx/Authentication-App/static/js/runtime-main.f048dd62.js.map",
-    "static/js/2.d30c86fc.chunk.js": "/https://github.com/IMythx/Authentication-App/static/js/2.d30c86fc.chunk.js",
-    "static/js/2.d30c86fc.chunk.js.map": "/https://github.com/IMythx/Authentication-App/static/js/2.d30c86fc.chunk.js.map",
-    "index.html": "/https://github.com/IMythx/Authentication-App/index.html",
-    "static/css/main.154d79e4.chunk.css.map": "/https://github.com/IMythx/Authentication-App/static/css/main.154d79e4.chunk.css.map",
-    "static/js/2.d30c86fc.chunk.js.LICENSE.txt": "/https://github.com/IMythx/Authentication-App/static/js/2.d30c86fc.chunk.js.LICENSE.txt"
+    "main.css": "/IMythx/Authentication-App/static/css/main.154d79e4.chunk.css",
+    "main.js": "/IMythx/Authentication-App/static/js/main.3ef5ab11.chunk.js",
+    "main.js.map": "/IMythx/Authentication-App/static/js/main.3ef5ab11.chunk.js.map",
+    "runtime-main.js": "/IMythx/Authentication-App/static/js/runtime-main.574d1d91.js",
+    "runtime-main.js.map": "/IMythx/Authentication-App/static/js/runtime-main.574d1d91.js.map",
+    "static/js/2.d30c86fc.chunk.js": "/IMythx/Authentication-App/static/js/2.d30c86fc.chunk.js",
+    "static/js/2.d30c86fc.chunk.js.map": "/IMythx/Authentication-App/static/js/2.d30c86fc.chunk.js.map",
+    "index.html": "/IMythx/Authentication-App/index.html",
+    "static/css/main.154d79e4.chunk.css.map": "/IMythx/Authentication-App/static/css/main.154d79e4.chunk.css.map",
+    "static/js/2.d30c86fc.chunk.js.LICENSE.txt": "/IMythx/Authentication-App/static/js/2.d30c86fc.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.f048dd62.js",
+    "static/js/runtime-main.574d1d91.js",
     "static/js/2.d30c86fc.chunk.js",
     "static/css/main.154d79e4.chunk.css",
-    "static/js/main.ff99ff4a.chunk.js"
+    "static/js/main.3ef5ab11.chunk.js"
   ]
 }
