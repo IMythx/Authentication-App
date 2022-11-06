@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/https://github.com/IMythx/Authentication-App/static/css/main.154d79e4.chunk.css",
-    "main.js": "/https://github.com/IMythx/Authentication-App/static/js/main.1cf6ada4.chunk.js",
-    "main.js.map": "/https://github.com/IMythx/Authentication-App/static/js/main.1cf6ada4.chunk.js.map",
+    "main.js": "/https://github.com/IMythx/Authentication-App/static/js/main.ff99ff4a.chunk.js",
+    "main.js.map": "/https://github.com/IMythx/Authentication-App/static/js/main.ff99ff4a.chunk.js.map",
     "runtime-main.js": "/https://github.com/IMythx/Authentication-App/static/js/runtime-main.f048dd62.js",
     "runtime-main.js.map": "/https://github.com/IMythx/Authentication-App/static/js/runtime-main.f048dd62.js.map",
     "static/js/2.d30c86fc.chunk.js": "/https://github.com/IMythx/Authentication-App/static/js/2.d30c86fc.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.f048dd62.js",
     "static/js/2.d30c86fc.chunk.js",
     "static/css/main.154d79e4.chunk.css",
-    "static/js/main.1cf6ada4.chunk.js"
+    "static/js/main.ff99ff4a.chunk.js"
   ]
 }
