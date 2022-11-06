@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/IMythx/Authentication-App/static/css/main.154d79e4.chunk.css",
-    "main.js": "/IMythx/Authentication-App/static/js/main.e3d24c23.chunk.js",
-    "main.js.map": "/IMythx/Authentication-App/static/js/main.e3d24c23.chunk.js.map",
+    "main.js": "/IMythx/Authentication-App/static/js/main.1b9517ca.chunk.js",
+    "main.js.map": "/IMythx/Authentication-App/static/js/main.1b9517ca.chunk.js.map",
     "runtime-main.js": "/IMythx/Authentication-App/static/js/runtime-main.574d1d91.js",
     "runtime-main.js.map": "/IMythx/Authentication-App/static/js/runtime-main.574d1d91.js.map",
-    "static/js/2.e99d759a.chunk.js": "/IMythx/Authentication-App/static/js/2.e99d759a.chunk.js",
-    "static/js/2.e99d759a.chunk.js.map": "/IMythx/Authentication-App/static/js/2.e99d759a.chunk.js.map",
+    "static/js/2.d30c86fc.chunk.js": "/IMythx/Authentication-App/static/js/2.d30c86fc.chunk.js",
+    "static/js/2.d30c86fc.chunk.js.map": "/IMythx/Authentication-App/static/js/2.d30c86fc.chunk.js.map",
     "index.html": "/IMythx/Authentication-App/index.html",
     "static/css/main.154d79e4.chunk.css.map": "/IMythx/Authentication-App/static/css/main.154d79e4.chunk.css.map",
-    "static/js/2.e99d759a.chunk.js.LICENSE.txt": "/IMythx/Authentication-App/static/js/2.e99d759a.chunk.js.LICENSE.txt"
+    "static/js/2.d30c86fc.chunk.js.LICENSE.txt": "/IMythx/Authentication-App/static/js/2.d30c86fc.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.574d1d91.js",
-    "static/js/2.e99d759a.chunk.js",
+    "static/js/2.d30c86fc.chunk.js",
     "static/css/main.154d79e4.chunk.css",
-    "static/js/main.e3d24c23.chunk.js"
+    "static/js/main.1b9517ca.chunk.js"
   ]
 }
