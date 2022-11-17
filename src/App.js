@@ -1,5 +1,9 @@
 import { useContext } from "react";
-import { Navigate, RouterProvider, createHashRouter } from "react-router-dom";
+import {
+  Navigate,
+  RouterProvider,
+  createBrowserRouter,
+} from "react-router-dom";
 
 import Layout from "./components/Layout/Layout";
 import ProfilePage from "./pages/ProfilePage";
@@ -15,53 +19,50 @@ function App() {
   const authCtx = useContext(AuthContext);
   return (
     <RouterProvider
-      router={createHashRouter(
-        [
-          {
-            element: <Layout />,
-            children: [
-              { path: "/", element: <Navigate replace to={"/Home"} /> },
-              {
-                path: "/Home",
-                element: !authCtx.isLoggedIn ? (
-                  <HomePage />
-                ) : (
-                  <Navigate replace to="/profile" />
-                ),
-              },
-              {
-                path: "/login",
-                element: !authCtx.isLoggedIn ? (
-                  <LogInPage />
-                ) : (
-                  <Navigate replace to="/profile" />
-                ),
-                action: logInAction,
-              },
-              {
-                path: "/signup",
-                element: !authCtx.isLoggedIn ? (
-                  <SignUpPage />
-                ) : (
-                  <Navigate replace to="/profile" />
-                ),
-                action: signUpAction,
-              },
-              {
-                path: "/profile",
-                element: authCtx.isLoggedIn ? (
-                  <ProfilePage />
-                ) : (
-                  <Navigate replace to="/" />
-                ),
-                action: newPassAction,
-              },
-              { path: "*", element: <Navigate replace to={"/"} /> },
-            ],
-          },
-        ],
-        { basename: "/" }
-      )}
+      router={createBrowserRouter([
+        {
+          element: <Layout />,
+          children: [
+            { path: "/", element: <Navigate replace to={"/Home"} /> },
+            {
+              path: "/Home",
+              element: !authCtx.isLoggedIn ? (
+                <HomePage />
+              ) : (
+                <Navigate replace to="/profile" />
+              ),
+            },
+            {
+              path: "/login",
+              element: !authCtx.isLoggedIn ? (
+                <LogInPage />
+              ) : (
+                <Navigate replace to="/profile" />
+              ),
+              action: logInAction,
+            },
+            {
+              path: "/signup",
+              element: !authCtx.isLoggedIn ? (
+                <SignUpPage />
+              ) : (
+                <Navigate replace to="/profile" />
+              ),
+              action: signUpAction,
+            },
+            {
+              path: "/profile",
+              element: authCtx.isLoggedIn ? (
+                <ProfilePage />
+              ) : (
+                <Navigate replace to="/" />
+              ),
+              action: newPassAction,
+            },
+            { path: "*", element: <Navigate replace to={"/"} /> },
+          ],
+        },
+      ])}
     />
   );
 }

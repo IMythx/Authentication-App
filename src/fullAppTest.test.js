@@ -33,12 +33,14 @@ describe("full App unit test", () => {
   });
 
   it("login form is shown if login link is clicked", async () => {
-    await userEvent.click(screen.getByRole("link", { name: /login/i }));
+    await act(async () =>
+      userEvent.click(screen.getByRole("link", { name: /login/i }))
+    );
     expect(screen.getByTestId("loginform")).toBeInTheDocument();
   });
   it("signup page is rendered when create new account link is clicked", async () => {
-    await userEvent.click(
-      screen.getByRole("link", { name: /create new account/i })
+    await act(async () =>
+      userEvent.click(screen.getByRole("link", { name: /create new account/i }))
     );
     expect(
       screen.getByRole("heading", { name: /sign up/i })
@@ -64,7 +66,9 @@ describe("full App unit test", () => {
     );
     await userEvent.type(screen.getByLabelText(/your password/i), "testttt");
 
-    fireEvent.submit(screen.getByRole("button", { name: /create account/i }));
+    await act(async () =>
+      fireEvent.submit(screen.getByRole("button", { name: /create account/i }))
+    );
     expect(await screen.findByText(/email exists/i)).toBeInTheDocument();
     expect(mockNavigate).not.toBeCalled();
   });
@@ -80,7 +84,9 @@ describe("full App unit test", () => {
     );
     await userEvent.type(screen.getByLabelText(/your password/i), "testttt");
 
-    fireEvent.submit(screen.getByRole("button", { name: /create account/i }));
+    await act(async () =>
+      fireEvent.submit(screen.getByRole("button", { name: /create account/i }))
+    );
     expect(
       await screen.findByRole("heading", { name: /log in/i })
     ).toBeInTheDocument();
@@ -105,7 +111,9 @@ describe("full App unit test", () => {
     );
     await userEvent.type(screen.getByLabelText(/your password/i), "test");
 
-    await userEvent.click(screen.getByRole("button", { name: /log in/i }));
+    await act(async () =>
+      userEvent.click(screen.getByRole("button", { name: /log in/i }))
+    );
 
     expect(await screen.findByText(/email not found/i)).toBeInTheDocument();
     expect(mockNavigate).not.toBeCalled();
@@ -128,7 +136,9 @@ describe("full App unit test", () => {
     );
     await userEvent.type(screen.getByLabelText(/your password/i), "test");
 
-    await userEvent.click(screen.getByRole("button", { name: /log in/i }));
+    await act(async () =>
+      userEvent.click(screen.getByRole("button", { name: /log in/i }))
+    );
 
     expect(await screen.findByText(/invalid password/i)).toBeInTheDocument();
     expect(mockNavigate).not.toBeCalled();
@@ -147,7 +157,9 @@ describe("full App unit test", () => {
     );
     await userEvent.type(screen.getByLabelText(/your password/i), "123456");
 
-    await userEvent.click(screen.getByRole("button", { name: /log in/i }));
+    await act(async () =>
+      userEvent.click(screen.getByRole("button", { name: /log in/i }))
+    );
 
     await waitFor(() =>
       expect(mockNavigate).toHaveBeenNthCalledWith(1, "/profile")
